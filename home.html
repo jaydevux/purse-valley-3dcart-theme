@@ -1,0 +1,70 @@
+<section id="home" class="home-page-content page-content">
+    <!--START: home_carousel-->
+    <section class="homepage-slider">
+        <div class="homeCarousel fullwidth-slider flexslider" data-animation="[hc_effect]" data-slideshowspeed="[hc_delay]">
+            <ul class="slides">
+                <!--START: carousel-->
+                <li><a href="[link]"><img src="[image]" alt="" /></a></li>
+                <!--END: carousel-->
+            </ul>
+        </div>
+    </section>
+    <!--END: home_carousel-->
+
+    <!--START: CATEGORY_HEADER-->
+    <section class="category-header content-section">
+        <div class="container">
+            <div class="content tc-pagebuilder">[CONTENT]</div>
+        </div>
+    </section>
+    <!--END: CATEGORY_HEADER-->
+
+    <section class="products-section wow fadeInUp">
+        <div class="container">
+            <!--START: FEATURE_MENU-->
+            <h2 class="header-specials">[category_Header-specials]</h2>
+
+            <!--START: CATEGORY_ITEMS-->
+            <div class="product-items product-items-[product-cols-number]">
+                <!--START: ITEM_TEMPLATE_0-->
+                [product_items]
+                <!--END: ITEM_TEMPLATE_0-->
+            </div>
+            <!--END: CATEGORY_ITEMS-->
+            <!--END: FEATURE_MENU-->
+        </div>
+    </section>
+    <!--START: CATEGORY_FOOTER-->
+    <section class="category-footer content-section">
+        <div class="container">
+            <div class="content tc-pagebuilder">[CONTENT]</div>
+        </div>
+    </section>
+    <!--END: CATEGORY_FOOTER-->
+</section>
+
+<!--START: template_scripts-->
+<script src="https://snapwidget.com/js/snapwidget.js"></script>
+<script type="text/javascript" src="/assets/templates/common-core/lib/flexslider/jquery.flexslider-min.js"></script>
+<script type="text/javascript" charset="utf-8">
+    jQuery(function () {
+        jQuery('.homeCarousel').flexslider({
+            animation: jQuery(this).data('animation'),
+            slideshowSpeed: jQuery(this).data('slideshowSpeed'),
+            controlNav: false,
+            keyboard: false
+        });
+    });
+
+    /*
+    var $head = $("iframe").contents().find("head");
+    $head.append($("<link/>",
+    { rel: "stylesheet", href: "assets/templates/[template]/css/default.css", type: "text/css" }));
+    */
+</script>
+<!--END: template_scripts-->
+
+
+<!--START: template_styles-->
+<link rel="stylesheet" href="/assets/templates/common-core/lib/flexslider/flexslider.css" type="text/css" media="screen" />
+<!--END: template_styles-->
